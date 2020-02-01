@@ -16,6 +16,7 @@ Open the mod.ini file, and change the Name, Description and Author to how you wa
 Next you will need your sa2blvl file. It has to be named "**LandTable.sa2blvl**" (without quotation marks) for the game to find the file. </br>
 If you replace the textures of the original garden, simply put your .pak into the gd_pc/PAK/ directory; Note that the file needs the same name as the original texture file of the garden that you are replacing, but be cautious when renaming (if you have to rename)! You cant just rename the file, you need to open it inside texture editor (see SATools) and save it with the correct filename. </br>
 If you dont replace the textures, you probably delete the gd_pc folder (considering you dont replace anything else). </br>
+**Note:** If some textures arent working correctly, then you might want to check the global index of the added textures in the texture file, as those shouldnt be reused throughout the game. You can view which global indices are taken on this page: https://mm.reimuhakurei.net/misc/sa2pcgbix.txt ; simply check which id isnt taken yet and set the global index of the new texture to it!
 
 
 We are almost done! Open the mod loader for sa2, go to your mod, select it, and click "configure" below the mod list. In there, you can set which garden to replace and what the new texture count is. </br>
