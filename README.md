@@ -8,7 +8,7 @@ Using this mod you can replace the stage geometry of the selected garden and hav
 ## What you will need
 - Your stage as an sa2blvl file
 - Possibly a modified texture file of the original garden saved as a .pak
-- The newest zip file from the release section of this github repo -> https://github.com/Justin113D/Sa2CustomGarden/releases
+- The newest "MyCustomGarden.zip" file from the release section of this github repo -> https://github.com/Justin113D/Sa2CustomGarden/releases
 
 ## How to set up
 First, extract the folder inside the downloaded zip to the mods folder of sonic adventure 2. </br>
