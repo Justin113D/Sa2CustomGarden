@@ -21,3 +21,6 @@ If you dont replace the textures, you probably delete the gd_pc folder (consider
 We are almost done! Open the mod loader for sa2, go to your mod, select it, and click "configure" below the mod list. In there, you can set which garden to replace and what the new texture count is. </br>
 **Leaving the texture count at 0 will use the default texture count of the original texture file!** </br>
 Now save, and test your mod ingame!
+
+## Enjoy!
+No need to credit me, its the custom garden that counts! I hope to see some crazy gardens ^~^
