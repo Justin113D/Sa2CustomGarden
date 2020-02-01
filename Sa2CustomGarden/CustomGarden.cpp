@@ -3,6 +3,9 @@
 #include "IniFile.hpp"
 #include "LandTableInfo.cpp"
 
+NJS_TEXNAME* texName;
+NJS_TEXLIST texList;
+
 extern "C"
 {
 	__declspec(dllexport) void Init(const char* path, const HelperFunctions& helperFunctions)
@@ -14,7 +17,7 @@ extern "C"
 		// 3. "Dark"
 		string gardenType = settings->getString("CustomGarden", "GardenType");
 		// Texture count is per default 0
-		int textureCount = settings->getInt("CustomGarden", "TextureCount");
+		Uint32 textureCount = settings->getInt("CustomGarden", "TextureCount");
 		delete settings;
 
 		// Default is "Neut", which means that it will be blank when not set
@@ -37,8 +40,8 @@ extern "C"
 			}
 		}
 
-		NJS_TEXNAME *texName = new NJS_TEXNAME[textureCount];
-		NJS_TEXLIST texList = { texName, textureCount };
+		texName = new NJS_TEXNAME[textureCount];
+		texList = { texName, textureCount };
 
 		LandTable* newTable = (new LandTableInfo(std::string(path) + "\\LandTable.sa2blvl"))->getlandtable();
 
